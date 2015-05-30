@@ -1,0 +1,135 @@
+﻿[
+  adopted from http://www.cs.rochester.edu/u/www/courses/171/Fall-03/files/readme.txt
+  by Deger Cenk Erdil
+  for CS654 Distributed Systems
+  This is a template README file about how you should form your own README file.
+  In general,
+        you should remove anything in between square brackets (i.e. [..]), and
+        you should replace anything in between <> with a value.
+]
+
+CS542 Design Patterns
+Spring 2014
+PROJECT 2 README FILE
+
+Due Date: Thursday, March 13, 2014
+Submission Date:  Thursday, March 13, 2014
+Grace Period Used This Project: 0 Days
+Grace Period Remaining: 0 Days
+Author(s): Chaitanya Bhasme
+e-mail(s): cbhasme1@binghamton.edu
+
+
+PURPOSE:
+
+[
+ The purpose of this project is to apply the design patterns/principle and build a multi-threaded chat service.
+]
+
+PERCENT COMPLETE:
+
+[
+  I believe I have completed 100% of this project.
+]
+
+PARTS THAT ARE NOT COMPLETE:
+
+[
+ None.
+]
+
+BUGS:
+
+[
+ None.
+]
+
+FILES:
+
+[
+  Included with this project are 12 files:
+  
+  build.xml, the ANT xml file
+  README.txt, the project text file you are presently reading
+  src/chat/client/ClientDriver.java, main ClientDriver class file for client
+  src/chat/client/ClientWorker.java, Worker class for client side
+  src/chat/driver/MainDriver.java, MainDriver class which will be called
+  src/chat/server/ServerDriver.java, ServerDriver class file for server side
+  src/chat/server/ServerHandler.java, ServerHandler file for client connection
+  src/chat/server/ServerWorker.java, Worker class for server side
+  src/chat/server/ThreadInfo.java, ThreadInfo file toe save the thread information
+  src/chat/util/Logger.java, Logger class to implement the BACKUP
+  src/chat/util/ThreadPool.java, ThreadPool file to manage threads
+  src/chat/util/Worker.java, Worker interface file
+
+ 
+]
+
+SAMPLE OUTPUT:
+
+[
+	Sample output for 1 client and 1 server.
+	commands used: ./run server 6790 and ./run localhost 6790
+	**ServerMenu**
+	1)Send Message to specific client
+	2)Print Message from specific client
+	3)Quit
+	Select your choice:
+	2
+	Enter client ID:
+	1
+	client1:hello
+
+	
+	**ClientMenu**
+	1)Give me a name
+	2)Send Message to server
+	3)Print Message from server
+	4)Quit
+	Select your choice:
+	1
+	Enter Name:
+	client1
+	Select your choice:
+	2
+	Enter your message:
+	hello
+
+
+
+]
+
+TO COMPILE:
+
+[
+  Please extract the tar file, go to the directory Chaitanya_Bhasme_assign2 and do-> ant compile
+]
+
+TO RUN:
+
+[
+  Please go the the extracted directory Chaitanya_Bhasme_assign2 and do-> chmod +x run.sh
+  run as: ./run.sh server <PORT_ID> and ./run.sh client <IP_ADDRESS> <PORT_ID>
+  For example: ./run.sh server 6790 and ./run.sh client localhost 6790
+]
+
+EXTRA CREDIT:
+
+[
+  N/A
+]
+
+
+BIBLIOGRAPHY:
+
+This serves as evidence that we are in no way intending Academic Dishonesty.
+[
+  -Java The Complete Reference, Eighth Edition, Author - Herbert Schildt, Tata McGraw-Hill.
+	for socket Programming example:
+   http://www.javaworld.com/article/2077322/core-java/sockets-programming-in-java-a-tutorial.html
+]
+
+ACKNOWLEDGEMENT:
+
+[
+]
